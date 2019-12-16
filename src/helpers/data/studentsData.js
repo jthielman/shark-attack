@@ -139,4 +139,6 @@ const students = [
   },
 ];
 
-export default { students };
+const livingStudents = () => students.filter((student) => student.isDead === false);
+
+export default { livingStudents };
