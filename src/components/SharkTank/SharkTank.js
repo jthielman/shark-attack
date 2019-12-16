@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import studentShape from '../../helpers/propz/studentShape';
 
+import './SharkTank.scss';
+
 import LiveStudent from '../LiveStudent/LiveStudent';
 
 class SharkTank extends React.Component {
@@ -16,7 +18,8 @@ class SharkTank extends React.Component {
 
     return (
       <div className='container'>
-        <div className='sharkTank row'>
+        <h1>Shark Tank</h1>
+        <div className='sharkTank row border border-primary rounded-lg card-deck'>
           {livingCards}
         </div>
       </div>
