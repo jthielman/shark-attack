@@ -87,7 +87,7 @@ const students = [
     id: 'student15',
     firstName: 'John',
     lastName: 'Thielman',
-    isDead: false,
+    isDead: true,
   },
   {
     id: 'student16',
@@ -141,4 +141,6 @@ const students = [
 
 const livingStudents = () => students.filter((student) => student.isDead === false);
 
-export default { livingStudents };
+const dearlyBeloved = () => students.filter((student) => student.isDead === true);
+
+export default { livingStudents, dearlyBeloved };
