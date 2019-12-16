@@ -14,7 +14,7 @@ class GraveStone extends React.Component {
 
     return (
       <div className="col">
-        <div className="card">
+        <div className="card m-2">
           <div className="card-body">
             <h6 className="card-title">{corpse.firstName} {corpse.lastName}</h6>
             <p className="card-text">{skull}</p>
