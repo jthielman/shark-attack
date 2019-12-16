@@ -20,10 +20,33 @@ class App extends React.Component {
   }
 
   render() {
+    const myStudents = this.state.livingStudents;
+
+    const attackAStudent = (e) => {
+      e.preventDefault();
+      const randomStudent = myStudents[Math.floor(Math.random() * myStudents.length)];
+      if (randomStudent) {
+        studentsData.followTheLight(randomStudent.id);
+      }
+      const livingStudents = studentsData.livingStudents();
+      const departed = studentsData.dearlyBeloved();
+      this.setState({ livingStudents, departed });
+    };
+
     return (
       <div className="App">
         <div className='row'>
-          <div className='col-8'><SharkTank living={this.state.livingStudents} /></div>
+          <div className='col-8'>
+            <div className='container'>
+              <h1>Shark Tank</h1>
+              <div className='sharkTank border border-primary'>
+                <button className='btn btn-danger m-3' onClick={attackAStudent}>SHARK ATTACK</button>
+                <div className='row card-deck'>
+                  <SharkTank living={this.state.livingStudents} />
+                </div>
+              </div>
+            </div>
+          </div>
           <div className='col-4'><Graveyard dead={this.state.departed} /></div>
         </div>
       </div>

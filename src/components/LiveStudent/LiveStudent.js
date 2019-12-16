@@ -14,11 +14,11 @@ class LiveStudent extends React.Component {
     const element = <FontAwesomeIcon icon={faSwimmer} />;
 
     return (
-      <div className="col-6">
-        <div className="card">
+      <div className="col-4">
+        <div className="card m-2">
           <div className="card-body">
             <h6 className="card-title">{student.firstName} {student.lastName}</h6>
-            <p className="card-text">still alive {element}</p>
+            <p className="card-text">{element}</p>
           </div>
         </div>
       </div>
