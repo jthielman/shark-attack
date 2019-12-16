@@ -149,7 +149,6 @@ const followTheLight = (studentId) => {
       response.isDead = true;
     }
   });
-  console.log(students);
 };
 
 export default { livingStudents, dearlyBeloved, followTheLight };
