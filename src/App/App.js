@@ -12,7 +12,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    const { livingStudents } = studentsData;
+    const livingStudents = studentsData.livingStudents();
     this.setState({ livingStudents });
   }
 
