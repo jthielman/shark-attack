@@ -13,11 +13,11 @@ class GraveStone extends React.Component {
     const skull = <FontAwesomeIcon icon={faSkull} />;
 
     return (
-      <div className="col">
+      <div className="col-6">
         <div className="card m-2">
           <div className="card-body">
-            <h6 className="card-title">{corpse.firstName} {corpse.lastName}</h6>
             <p className="card-text">{skull}</p>
+            <p className="card-title">{corpse.firstName} {corpse.lastName}</p>
           </div>
         </div>
       </div>

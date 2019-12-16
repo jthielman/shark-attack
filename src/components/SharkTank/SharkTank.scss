@@ -1,3 +1,16 @@
+@import '../../styles/variables';
+
 .sharkTank {
-  background-color: skyblue;
+  background-color: $sharkTankBlue;
+  height: 83em;
+  border-radius: 5px;
+
+  .card-deck{
+    .col-4 {
+      .card{
+        border-radius: 10em;
+        background-color: $beige;
+      }
+    }
+  }
 }

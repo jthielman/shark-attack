@@ -39,7 +39,7 @@ class App extends React.Component {
           <div className='col-8'>
             <div className='container'>
               <h1>Shark Tank</h1>
-              <div className='sharkTank border border-primary rounded-lg'>
+              <div className='sharkTank border border-primary'>
                 <button className='btn btn-danger m-3' onClick={attackAStudent}>SHARK ATTACK</button>
                 <div className='row card-deck'>
                   <SharkTank living={this.state.livingStudents} />

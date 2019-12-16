@@ -1,3 +1,22 @@
+@import '../../styles/variables';
+
 .graveyard {
-  background-color: lightseagreen;
+  background-color: $graveyardGreen;
+  height: 83em;
+
+  .col-6{
+    .card {
+      background-color: $gravestoneGrey;
+      border-top-right-radius: 100px;
+      border-top-left-radius: 100px;
+      height: 6em;
+      .card-body {
+        padding: 0em;
+        .card-text {
+          margin-top: .5em;
+          margin-bottom: .5em;
+        }
+      }
+    }
+  }
 }

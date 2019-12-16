@@ -19,7 +19,7 @@ class Graveyard extends React.Component {
     return (
       <div className='container'>
         <h1>Graveyard</h1>
-        <div className='graveyard row border border-info rounded-lg card-deck'>
+        <div className='graveyard row border border-info rounded-lg card-deck align-content-start'>
           {stoneCards}
         </div>
       </div>
